@@ -19,6 +19,10 @@ const port  = process.env.PORT || 8080;
 
 console.log('pajama');
 console.log(isDev)
+console.log(process.env.NODE_ENV)
+console.log(port)
+console.log(__dirname)
+	
 console.log(config.db); 
 // Configuration
 // ================================================================================================
