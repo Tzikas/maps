@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: mnrvBkQO/W61oOp34Tv74zgRQ76nGKFf0rCcjK4ZkRFbcMooGPTT7VpKwiGAnuelcsT/9lHnG+QExzZLgWxmUWiXbDxc4WWkkt0iDihXt8HT1fR74L409jULWXa8ISBEYHOdJBQCH1OXA39WhOPctrGQkEUtff18dSBHAoDybWDUr7yLNHtgb6zttrqhMfFjlU++GAdR3/IWd/u9htDxSbk9xG0aStDDDEzSz+/IhStmL6VLE8gzFPaueC3lYPDNrjJoNABO9jRXseoeYSz7HJCcgHVUu4OL+8lulR6evmgkJ0LLNTHgKmGclUy++PHJISuVa0ZELSPX7OrVy19zGqN8D0jWhacjInUdnLvHovThAmckbrpytVEx9bev2PCCAfI5123XPnFyMyKOh6JIwZF82MvBdI8d52rlkpl1pZWcez8MNTcwfWQ3mkPXrU4wzKO2QE50hVZQTO0SYAmUPAwEaklic5Hs5loSJAYNSIK46YeGh2Sgn5ccg0a2tuhwzmANbQ7V60Eoe1NO1X+m8/5O5AQZDG6nPl+W5g0MrJewKc9g2NemmvRRID32b1vIe9AJ8bBEZMLEpqtWbhPeSg6uuwC3waBo48YvR4DJqFaDLp9KB/ShXXxQaC8MhoDyI+nJoJSQCmFmp0K1FhoJiAdUqUFJk5FQXGmHCr2bAkk=
+  app: gentle-basin-38129
+  on:
+    repo: krothenbaum/react-capstone
