@@ -18,13 +18,6 @@ const isDev = process.env.NODE_ENV !== 'production';
 const port  = process.env.PORT || 8080;
 
 const cors = require('cors'); 
-app.use(cors());
-console.log('yo')
-//app.get('/api', games.find);
-app.get('/products', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
-});
-
 
 console.log('pajama');
 console.log(isDev)
@@ -43,6 +36,16 @@ mongoose.Promise = global.Promise;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+
+app.use(cors());
+console.log('yo')
+//app.get('/api', games.find);
+app.get('/products', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+});
+
+
 
 // API routes
 require('./routes')(app);
