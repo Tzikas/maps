@@ -19,7 +19,7 @@ const port  = process.env.PORT || 8080;
 
 const cors = require('cors'); 
 app.use(cors());
-
+console.log('yo')
 //app.get('/api', games.find);
 app.get('/products', function (req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
