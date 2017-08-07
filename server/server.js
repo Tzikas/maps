@@ -17,6 +17,15 @@ const isDev = process.env.NODE_ENV !== 'production';
 // console.log(PORT);
 const port  = process.env.PORT || 8080;
 
+const cors = require('cors'); 
+app.use(cors());
+
+//app.get('/api', games.find);
+app.get('/products', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+});
+
+
 console.log('pajama');
 console.log(isDev)
 console.log(process.env.NODE_ENV)
