@@ -17,7 +17,9 @@ const isDev = process.env.NODE_ENV !== 'production';
 // console.log(PORT);
 const port  = process.env.PORT || 8080;
 
-
+console.log('pajama');
+console.log(isDev)
+console.log(config.db); 
 // Configuration
 // ================================================================================================
 
