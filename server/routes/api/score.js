@@ -11,7 +11,7 @@ module.exports = (app) => {
 			.catch((err) => next(err));
 	});
 
-	app.get('api/score/top'), (req, res, next) => {
+	app.get('api/score/top', (req, res, next) => {
 		Score
 			.find()
 			.sort({score: -1})
@@ -21,7 +21,7 @@ module.exports = (app) => {
 				console.log(scores);
 			})
 			.catch((err) => next(err));
-	}
+	});
 	
 	app.post('/api/score', function (req, res, next) {
 		const score = new Score({name: req.body.name, score: req.body.score});
